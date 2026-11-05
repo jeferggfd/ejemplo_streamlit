@@ -14,6 +14,7 @@ def cargar_datos() -> pd.DataFrame:
 df = cargar_datos()
 
 # --- Filtros en la barra lateral ---
+st.sidebar.title("pagina de pasita ")
 st.sidebar.header("Filtros")
 colores = st.sidebar.multiselect(
     "Colores", sorted(df["color"].unique()), default=sorted(df["color"].unique())
