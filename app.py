@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(page_title="Ventas de autos", page_icon="🚗")
-st.title("🚗 Ventas de autos por color")
+st.title("🚗 Ventas DE JOSES MILITARES ")
 
 
 @st.cache_data
