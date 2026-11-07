@@ -39,7 +39,7 @@ col2.metric(
 
 # --- Gráfico 1: ventas por color ---
 st.subheader("Ventas totales por color")
-por_color = filtrado.groupby("color")["unidades"].mean().sort_values(ascending=False)
+por_color = filtrado.groupby("color")["unidades"].sum().sort_values(ascending=False)
 fig1, ax1 = plt.subplots()
 ax1.bar(por_color.index, por_color.values, color="forestgreen")
 ax1.set_ylabel("Unidades")
